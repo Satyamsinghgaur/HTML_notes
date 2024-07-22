@@ -1,2 +1,3 @@
 # HTML_notes
-This is my html notes.
+This is Basic HTML Notes.
+Visit - https://satyamsinghgaur.github.io/HTML_notes/
