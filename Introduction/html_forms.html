@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <h1>HTML Form</h1>
+    <p>In HTML form is created to take data from user</p>
+    <br><img src="../Photo/html_form_example.png" alt="form output" width="300px" height="350px">
+    <hr>
+    <h2>Form Initialization :-</h2>
+    <img src="../Photo/form_syntax.png" alt="form syntax" width="300" height="150px">
+
+    <h3>HTML Form Syntax</h3>
+    <ul>
+        <li><h4>Form Tag :-</h4><img src="../Photo/html_form.png" alt="html form" width="100px" height="100px">
+        <br><p>In form tag we use two attributes:-</p>
+        <ul>
+            <li><h4>"Action" Attribute :-</h4><p><strong>Action attribute</strong> is used to define what action needs to be performed when a form is submitted or where the form data should be sent.</p><br><img src="../Photo/form_action_attribute.png" alt="form action attribute" width="200px" height="70px"></li>
+            <li><h4>"Method" Attribute :-</h4><p>The method attribute specifies how to send form-data (the form-data is sent to the page specified in the action attribute).</p><br>The form-data can be sent as URL variables <strong>(with method="get")</strong> or as HTTP post transaction <strong>(with method="post")</strong>.</li>
+        </ul></li>
+
+        <li>
+            <h4>Label tag :-</h4><p>Label element represents a caption for an item in a user interface.</p><br><img src="../Photo/lable_example.png" alt="lable example" width="300px" height="100px"><br><p>We can connect lable to a <strong>Input</strong> by two methods:-</p>
+            <ul>
+                <li><h5>By writing "Input" in the "Lable" tag:-</h5>><img src="../Photo/lable_example.png" alt="lable example" width="300px" height="100px"></li>
+                <li>
+                    <h5>By using "id"</h5><p>This is <strong>Classical Approch</strong></p><img src="../Photo/lable_classical.png" alt="lable classical Approch" width="350px" height="80px"><br>
+                    <img src="../Photo/lable_id.png" alt="Lable by id"  width="250px" height="60px"><br>
+                    <p><strong>Id :-</strong> Id is a unique name which is given to an element. It is used to identify elements uniquely and gives them indivisuality.</p>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <h4>Button Element :-</h4><p>It is used to create a button. If we click on it then it will perform the action which is defined in the <strong>action</strong> attribute inside the starting <strong>form</strong> tag.</p><br><img src="../Photo/button_syntax.png" alt="button element" width="200px " height="50px"><br><img src="../Photo/example_submit_button.png" alt="submit button" width="300px" height="130px">
+            <br><p>For example in above image pressing the submit button will perform the <strong>"action.php"</strong> activity.</p>
+            <form action="./html_forms.html" style="border-color: rgb(168, 22, 22);  border-style: solid;">
+                <button>submit</button>
+            </form>
+            <br><p><strong>Note :-</strong></p>
+            <ul>
+                <li>
+                    <p>By Default every button in form work to perform <strong>action</strong> which is given inside the starting <strong>form</strong> tag.</p>
+                    <h5>Types of Button</h5><p>There are Three types of buttons :-</p><img src="../Photo/button_types.png" alt="Types of buttons" width="300px" height="120px"
+                </li>
+                <li><p>We also can create button element by using <strong>Input Element</strong></p><img src="../Photo/button_with_input_tag.png" alt="button element by input tag" width="300px" height="110px"></li>
+            </ul>
+        </li>
+
+        <li>
+            <h4>Input Tag :-</h4>
+            <ul>
+                <li>Used to create multiple form controls.</li>
+                <li>There are multiple types of inputs that can be created using type attribute.</li>
+            </ul>
+            <img src="../Photo/input_tag.png" alt="input tag" width="150px " height="50px">
+            <br><p>There are different <strong>Types</strong> of Inputs in HTML Form :-</p>
+            <img src="../Photo/different_input.png" alt="Different types of input" width="200px" height="200px"><br>
+            <img src="../Photo/html_form_input_element.png" alt="html input" width="500px" height="500px">
+            <br><h2>Different Form Input types :-</h2>
+
+            <form action="/action" style="border-color: rgb(168, 22, 22);  border-style: solid;">
+                <label>Text Input</label>
+                <input type="text" placeholder="Enter Text"/><br>
+                <label>Password Input</label>
+                <input type="password" placeholder="Enter Password"/><br>
+                <label>Number Input</label>
+                <input type="number" placeholder="Enter Number"/><br>
+                <label>Time Input</label>
+                <input type="time"/><br>
+                <label>color Input</label>
+                <input type="color"/><br>
+                <label>button Input</label>
+                <input type="button" placeholder="Click me"/><br>
+                <label>checkbox Input</label>
+                <input type="checkbox"/><br>
+                <label>Date Input</label>
+                <input type="date"/><br>
+                <label>Datetime-local Input</label>
+                <input type="datetime-local"/><br>
+                <label>Email Input</label>
+                <input type="email" placeholder="example@email.com"/><br>
+                <label>file Input</label>
+                <input type="file"/><br>
+                <label>image Input</label>
+                <input type="image"/><br>
+                <label>radio Input</label>
+                <input type="radio"/><br>
+                <label>range Input</label>
+                <input type="range"/><br>
+                <label>reset Input</label>
+                <input type="reset"/><br>
+                <label>url Input</label>
+                <input type="url" placeholder="https://www.example.com"/><br>
+                <label>tel (Telephone No.) Input</label>
+                <input type="tel" placeholder="0123456789"/><br/>
+            </form>
+            <br>
+
+            <h2>Attributes in Input Type :-</h2>
+            <ul>
+                <li>           
+                    <h3>Placeholder Attribute :-</h3><img src="../Photo/form_placeholder.png" alt="imput Placeholder" width="400px" height="50px"><br>
+                    <strong>Placeholder Example :-</strong><br><img src="../Photo/placeholder_exaple.png" alt="placeholder code" width="400px" height="180px">
+                    <br><strong><u>Output :-</u></strong><br><br>
+                    <form action=" " style="border-color: rgb(168, 22, 22);  border-style: solid;">
+                        <label><b>Name :-</b></label>
+                        <input type="text" placeholder="First Name">
+                        <input type="text" placeholder="Middle Name">
+                        <input type="text" placeholder="Last Name">
+                    </form>
+                </li>
+                <li>
+                    <h3>Name Attribute (By Apna College) :- </h3>
+                    
+
+                        <ul>
+                            <li>
+                                <p>
+                                    Name of the form control. Submitted with the form as part of the namevalue pair.
+                                </p><img src="../Photo/name_attribute_By_apna_college.png" alt="Name Attribute in text input tag"  width="500px" height="50px">
+                            </li>
+                            <li>
+                                <p>
+                                    Name attribute is used to send the <strong>"Name - Value" pair (name = value)</strong> to server after submitting the form. <br> Where <strong>Name</strong> is the attribute value which is defined by the coder and the <strong>Value</strong> is the data entered in the form by the user.<br/><br><strong>For Example :- </strong><br><img src="../Photo/name_attr_apna.png" alt="name att"  width="200px" height="100px"><br>In above example if user write "ABCD" in the text area then <strong>"Name - Value" pair</strong> value will be <strong>"username - ABCD"</strong>.
+                                </p>
+                            </li>
+                        </ul>
+                    <p><Strong style="text-align: center;">OR</Strong></p>
+                    <h3>Name Attribute (By internet):- </h3>
+                    <ul>
+                        <li><p>Specifies a name used to identify an element in form.</p></li>
+                        <li><p>It is used to give a name to the control which is sent to the server to be recognized and get the value.</p><br><img src="../Photo/name_attribute.png" alt="Name Attribute" width="400px" height="50px"></li>
+                    </ul>
+                    <br>
+                    <p>We can create a youtube search button by form by pasting the youtube link and remove all the information of url from <strong>?</strong></p><img src="../Photo/youtube_search_form.png" alt="youtuve search"  width="500px" height="100px"><br>
+                    <br><p><strong>Output :-</strong><br></p>
+                    <form action="https://www.youtube.com/results" style="border-color: rgb(168, 22, 22);  border-style: solid;">
+                        <label for="youtube_search">Enter the query</label>
+                        <input type="text" name="search_query" id="youtube_search" placeholder="Search in youtube"><br><button type="reset">reset</button><br>
+                        <button type="submit">search</button>
+                    </form>
+                    <br><p><strong>Explainaton :- </strong> When we search something in youtube search bar then it will go as the "name - value" pair which is <strong>"search_query = user_input"</strong></p>
+                    <img src="../Photo/youtube_search_lol.png" alt="youtube search bar"  width="500px" height="100px">
+                </li>
+                <li>
+                    <h3>value Attribute :- </h3>
+                    <p>It initialize the value of an <strong>input type.</strong>. It is changed by user and this changed value is submitted to server by pressing the submit button.</p>
+                    <ul>
+                        <li>For <strong>"button", "reset", and "submit" </strong>- it defines the text on the button.</li>
+                        <li>For <strong> "text", "password", and "hidden"</strong> - it defines the initial (default) value of the input field.</li>
+                        <li>For <strong>"checkbox", "radio", "image"</strong> - it defines the value associated with the input (this is also the value that is sent on submit).</li>
+                    </ul>   
+                    <br><img src="../Photo/value_attribute.png" alt="vlaue attribute" width="500px" height="180px">
+                    <form action="#" style="border-color: rgb(168, 22, 22);  border-style: solid;">
+                        <label for="input_button">Button</label>
+                        <input type="button" name="button" id="input_button" value="press button"><br>
+                        <label for="input_reset">Reset</label>
+                        <input type="reset" name="reset" id="input_reset" value="press here to reset"><br>
+                        <label for="input_submit">submit</label>
+                        <input type="submit" name="submit" id="input_submit" value="Click for submit"><br>
+                        <label for="Text_input">Enter Text</label>
+                        <input type="text" name="Text" id="Text_input" value="Enter Text.">
+                    </form>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <h4>checkbox Input</h4>
+            <p><u>Syntax :- </u><br><strong>&lt;input type="checkbox" name=" " id=" " checked&gt;</strong></p><img src="../Photo/checkbox_example.png" alt="Checkbox" width="450px" height="70px">
+            <br><p>Example :-</p>
+            <form action="#" style="border-color: rgb(168, 22, 22);  border-style: solid;">
+                <label for="html_checkbox">I am 18+</label>
+                <input type="checkbox" name="age" id="html_checkbox" checked>
+            </form>
+            <p><strong>Note :-</strong> Here <strong>"Checked"</strong> attribute is used to pre-check the "checkbox". If we don't use it then the checkmark will be unmarked. <strong>ie -</strong></p>
+            <form action="#" style="border-color: rgb(168, 22, 22);  border-style: solid;">
+                <label for="html_checkbox">I am 18+</label>
+                <input type="checkbox" name="age" id="html_checkbox">
+            </form>
+        </li>
+
+        <li>
+            <h4>Radio Button :- </h4>
+            <p>
+                <ul>
+                    <li>
+                        <p><Strong>Radio</Strong> in HTML is used when we have to choose only one option from many options.</p>
+                    </li>
+                    <li>
+                        <p>Only one option will be selected from one group because in all radio inputs <strong>"name" attribute</strong> is same. So We can say that <b>"Name" attribute in "Radio" is used for grouping of options where one option can be selected.</b><br/><img src="../Photo/radio_fruit.png" alt="fruit radio options." width="500px" height="250px"></p>
+
+                        <form action="#" style="border-color: rgb(168, 22, 22);  border-style: solid;">
+                            <B>Choose one fruit :-</B><br>
+                            <label for="Banana_radio">Banana</label>
+                            <input type="radio" name="Fruit_name" id="Banana_radio" value="Banana"><br>
+                            <label for="Mango_radio">Mango</label>
+                            <input type="radio" name="Fruit_name" id="Mango_radio" value="Mango"><br>
+                            <label for="Grape_radio">Grapes</label>
+                            <input type="radio" name="Fruit_name" id="Grape_radio" value="Grapes"><br>
+                            <label for="Apple_radio">Apple</label>
+                            <input type="radio" name="Fruit_name" id="Apple_radio" value="Apple"><br>
+                        </form>
+                        <p><strong>Note :-</strong> If we don't use same "name" attribute then we can select more than one items. For Example in following code we can choose banana and one of other fruits.:-</p><img src="../Photo/fruit_wrong.png" alt="different name in radio" width="500px" height="250px">
+                        <form action="#" style="border-color: rgb(168, 22, 22);  border-style: solid;">
+                            <B>Choose one fruit :-</B><br>
+                            <label for="Banana_radio">Banana</label>
+                            <input type="radio" name="Fruit" id="Banana_radio" value="Banana"><br>
+                            <label for="Mango_radio">Mango</label>
+                            <input type="radio" name="Fruit_name" id="Mango_radio" value="Mango"><br>
+                            <label for="Grape_radio">Grapes</label>
+                            <input type="radio" name="Fruit_name" id="Grape_radio" value="Grapes"><br>
+                            <label for="Apple_radio">Apple</label>
+                            <input type="radio" name="Fruit_name" id="Apple_radio" value="Apple"><br>
+                        </form>                   
+
+                    </li>
+                </ul>
+                <br><b><u>Syntax :-</u></b>
+                <br><strong>&lt;input type="radio" name=" " id=" " value="" &gt;</strong></p><img src="../Photo/radio_button_example.png" alt="radio button" width="450px" height="90px"">
+        </li>
+
+        <li>
+            <h4>Select Element :-</h4>
+            <ul>
+                <li>
+                    <p>Select Element in HTML is used to create <strong>Dropdown</strong> Menu.</p>
+                </li>
+                <li>
+                    <p>In <strong>Select</strong> Element two tags are used :-</p>
+                    <ul>
+                        <li><strong>Select Tag :-</strong> This is used to intitialize Dropdown menu.</li>
+                        <li><strong>Option Tag :-</strong> This is used to create Every individual options for select menu.</li>
+                    </ul>
+                </li>
+            </ul><br>
+            <img src="../Photo/select_tag_syntax.png" alt="Select syntax" width="300px" height="150px">
+            <br><strong>Example :-</strong>
+            <br><img src="../Photo/select_tag_example.png" alt="select syntax example" width="350px" height="150px">
+            <br><h4>Following is a code to select a subject :-</h4><img src="../Photo/select_tag_code.png" alt="select tag code" width="600px" height="200px"><br>
+            <form action="/action" style="border-color: rgb(168, 22, 22);  border-style: solid;"> 
+                <b>Subject taken Selection Form :-</b><br>
+                <label for="subject_select"><b>Select the subject</b></label><br>
+                <select name="subject" id="subject_select">
+                    <option >Select your subject</option> 
+                    <!--This option which is without "value" attribute is for default option-->
+                    <option value="eng">English</option>
+                    <option value="hin">Hindi</option>
+                    <option value="math">Math</option>
+                    <option value="phys">Physics</option>
+                    <option value="chem">Chemistry</option>
+                </select>
+                
+                <br><button type="submit">submit</button>
+            </form>
+            <p><Strong>Note :-</Strong> If we wanted that an option will come pre-selected then we use <strong>"Selected"</strong> Attribute in option tag. <strong>ie -</strong></p><img src="../Photo/pre_selected_option.png" alt="selected option" width="400px" height="100px">
+        </li>
+
+        <li>
+            <h4>Range Element :-</h4>
+            <p>To select option from a range. In This We use <strong>Min</strong> and <strong>Max</strong> Attributes to define the range of the element. <br><Strong>Syntax</Strong></p><img src="../Photo/range_input_syntax.png" alt="range syntax" width="500px" height="100px">
+            <br><strong>Example :-</strong><br>
+            <img src="../Photo/range_example.png" alt="range example" width="500px" height="90px">
+            <br><img src="../Photo/range_input_code.png" alt="range inpute code example" width="500px" height="250px">
+            
+            <form action="/action" style="border-color: rgb(168, 22, 22);  border-style: solid;">
+                <p>Audio Settings</p>
+                <div>
+                    <label for="volume_range">Volume</label>
+                    <input type="range" id="volume_range" name="vol" min="0" max="10">
+                </div>
+                <div>
+                    <label for="volume_cowbell">cowbell</label>
+                    <input type="range" id="volume_cowbell" name="Cowbell" min="0" max="100">
+                </div>
+            </form>
+            <p><strong>Note :-</strong> In Range We use <strong>"Step" Attribute</strong> to increase or decrease in the steps or interval of the value of "step" attribute And <Strong>"Value" Attribute</Strong> to predefine the value of the range</p>
+            <p style="border-color: rgb(168, 22, 22);  border-style: solid;">
+                <strong>Syntax :-</strong>
+                <br>&lt;input type="range" name="vol" id="volume" min="0" max="100" <u>step="10"</u> <u>value="70"</u>&gt;
+            </p>
+            <p><strong>Example :-</strong></p>
+            
+            <form action="/action" style="border-color: rgb(168, 22, 22);  border-style: solid;">
+                <label for="volume">Volume</label><br>
+                <input type="range" name="vol" id="volume" min="0" max="100" step="10" value="70"><br>
+                <button type="submit">Submit</button>
+            </form>
+
+        </li>
+
+        <li>
+            <h4>"Text Area" Element :-</h4>
+            <p>It is used to write large text in Html form.</p><img src="../Photo/Text_area_syntax.png" alt="text area syntax" width="500px" height="100px"><br>
+            
+            <form action="/action" style="border-color: rgb(168, 22, 22);  border-style: solid;">
+                <p>Write your review on this website.</p>
+                <label for="review"><strong>Review</strong></label><br>
+                <textarea name="text_area" id="review"></textarea>
+                <br><button type="submit">submit</button>
+            </form>
+
+            <p><Strong>Note :-</Strong> By default it has size of <strong>2 rows and 20 columns</strong>. We can chage the size of the text-area by using <strong>Rows</strong> and <strong>Cols</strong>Attribute</p><img src="../Photo/Text_area_rows_cols.png" alt="text area rows and column attributes" width="400px" height="50px">
+
+            <form action="/action" style="border-color: rgb(168, 22, 22);  border-style: solid; padding: 5px 5px 5px 5px;">
+                <p>Write your review on this website.</p>
+                <label for="review"><strong>Review</strong></label><br>
+                <textarea name="text_area" id="review" rows="5" cols="50" placeholder="Write your Text Here."></textarea>
+                <br><button type="submit">submit</button>
+            </form>
+
+        </li>
+    </ul>
+    
+
+
+    <!-- to create border :- style="border-color: rgb(168, 22, 22);  border-style: solid;" -->
+    <!-- width="" height="" -->
+    <p><b>main page :-</b> <a href="./index.html">Click Here</a></p>    
+</body>
+</html>

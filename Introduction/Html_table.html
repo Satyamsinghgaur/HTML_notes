@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table</title>
+</head>
+<body>
+    <H1 style="text-align: center;">HTML Table</H1>
+    <p>Tables are used to represent real life table data.</p>
+    <br><img src="../Photo/table.png" alt="table img">
+    <br><p>there are five tags or terms in table :-</p>
+    <ul>
+        <li>
+            <h1>Table tag :-</h1>
+            <p>Table tag is root element of a table in HTML, all HTML Table tags are written under it. In HTML table tag is used by <strong>&lt;table&gt;.........&lt;/table&gt;</strong>.</p>
+        </li>
+        <li>
+            <h1>Table Header :-</h1>
+            <p>The top part of a table that typically contains headings from each comlumn, providing context for the data in the cells below. In HTML, table headers are created using <strong>&lt;th&gt;......&lt;/th&gt;</strong> tag, which is also known as <strong>Table header</strong> within the <strong>&lt;tr&gt;</strong>. </p>
+        </li>
+        <li>
+            <h1>Row :-</h1>
+            <p>A horizontal line of cells in a table. In HTML, a row is created using <strong>&lt;tr&gt;.......&lt;/tr&gt;</strong> tag, which is also known as <strong>Table Row.</strong></p>
+        </li>
+        <li>
+            <h1>Column :-</h1>
+            <p>A vertical line of cells in a table. Columns are formed by stacking cells vertically across rows. In HTML table header commanly use for creating columns.</p>
+        </li>
+        <li>
+            <h1>Table Data :-</h1>
+            <p>table data refers to the individual cells within a table that contain the actual content or data. Each cell of the data is created using <strong>&lt;td&gt;......&lt;/td&gt</strong> tag, which is also known as <strong>Table Data</strong>.
+            </p>
+        </li>
+        <li>
+            <h1>Caption :-</h1>
+            <p>This is used to show the title of the table. In HTML it created by <strong>&lt;caption&gt;......&lt;/caption&gt</strong></p><br><img src="../Photo/Table_caption.png" alt="table caption" width="300px" height="200px">
+        </li>
+    </ul>
+    <br>
+    <h2>Table Syntax :-</h2><img src="../Photo/Table_syntax.png" alt="table Table_syntax" width="300px" height="300px"><br><br><strong>Table Example :-</strong>
+    <br><img src="../Photo/Table_format.png" alt="table format" width="500px" height="250px" >
+    <hr>
+    <h3>Example Table :-</h3>
+    <table border=black">
+        <caption>Table Example</caption>
+        <!-- This is table header -->
+        <thead>
+            <tr>
+                <th>Table Header 1</th>
+                <th>Table Header 2</th>
+                <th>Table Header 3</th>
+            </tr>
+        </thead>
+        <!-- this is table body -->
+        <tbody>
+            <tr>
+                <td>Row 1</td>
+                <td>Table Data 1</td>
+                <td>Table Data 2</td>
+            </tr>
+            <tr>
+                <td>Row 2</td>
+                <td>Table Data 3</td>
+                <td>Table Data 4</td>
+            </tr>
+            <tr>
+                <td>Row 3</td>
+                <td>Table Data 5</td>
+                <td>Table Data 6</td>
+            </tr>
+            <tr>
+                <td>Row 4</td>
+                <td>Table Data 7</td>
+                <td>Table Data 8</td>
+            </tr>
+        </tbody>
+        <!-- this is table footer -->
+        <tfoot>
+            <tr>
+                <td><b>TOTAL </b></td>
+                <td>Table footer 1</td>
+                <td>table footer 2</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br><h3>All Table Tags :-</h3><img src="../Photo/table_tags.png" alt="Table tags" width="400px" height="300px">
+
+    <hr>
+    <h2>Semantic in Table :-</h2>
+    <img src="../Photo/table_semantic.png" alt="table Semantic" width="250px" height="150px">    
+    <br><img src="../Photo/table_semantic_2.png" alt="table semantic 2" width="300px" height="240px">
+    <hr>
+    <h2>Colspan & Rowspan Attributes</h2>
+    <p>Used to create cells with spans over multiple rows or columns.</p><br>
+    <img src="../Photo/rowspan_colspan.png" alt=" Colspan and Rowspan" width="500" height="250px"><br>
+    <ul>
+        <li>
+            <h2>Colspan :-</h2>
+            <p>Specifies how many columns a cell should span across. Colspan is used to make a cell wider across columns.
+            </p><img src="../Photo/colspan.png" alt="colspan" width="200px" height="40px"><br><p>"Here number defines how many <strong>columns</strong> it will occupy"</p>
+        </li>
+        <li>
+            <h2>Rowspan :-</h2>
+            <p>Specifies how many rows a cell should span down across. Rowspan is used to make a cell taller across rows.</p><img src="../Photo/rowspan.png" alt="rowspan" width="200px" height="40px"><br><p>"Here number defines how many <strong>rows</strong> it will occupy"</p>
+        </li>
+    </ul>
+    
+    <h3>Example :-</h3>
+    <table border="solid">
+        <caption>Food Menu</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Item</th>
+                <th colspan="2">Price</th>
+            </tr>
+            <tr>
+                <th>INR</th>
+                <th>USD</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Frooti</td>
+                <td>10</td>
+                <td>0.14</td>
+            </tr>
+            <tr>
+                <td>Samosa</td>
+                <td>12</td>
+                <td>0.17</td>
+            </tr>
+            <tr>
+                <td>Chips</td>
+                <td>20</td>
+                <td>0.28</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>All items</td>
+                <td>42</td>
+                <td>0.59</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- width="" height="" -->
+    <p><b>main page :-</b> <a href="./index.html">Click Here</a></p>
+</body>
+</html>
